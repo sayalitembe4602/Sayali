@@ -1,0 +1,91 @@
+1.Plan 
+
+Jira: Used to plan tasks, assign work to team members, track bugs, and manage project progress.
+
+Azure Dashboards: Used to display project or operational information through visual dashboards and metrics.
+
+In the planning stage, the team defines the work and tracks its progress. Jira manages tasks and bugs, while dashboards help the team visualize relevant project or system information.
+
+2.Code
+
+Git: A version control system that tracks changes in source code.
+when five developers work on the same application They need a way to track changes, work independently, and combine their code safely.
+
+GitHub: An online platform for hosting Git repositories, collaborating with developers, and managing pull requests.
+
+Git tracks the history of source code, and GitHub allows developers to share repositories, review changes through pull requests, and collaborate as a team
+
+3.Build
+
+Maven: A build automation tool mainly used for Java projects to compile code, manage dependencies, and package applications.
+
+Maven uses a configuration file called pom.xml to describe project settings, dependencies, plugins, and build tasks.
+
+Gradle: A build automation tool used to compile, test, and package software with flexible build configurations.
+
+         Maven                                           Gradle
+
+1] Commonly configured using pom.xml	1]Commonly configured using build.gradle or
+                                           build.gradle.kts                         
+
+2]Convention-based project structure     2]Flexible, programmable build configuration
+
+3]Uses a defined lifecycle of build phases 3]Uses a task-based build system
+
+4.Test
+
+Testing checks whether the application works as expected and helps detect defects before release.
+Selenium: A tool used to automate web browsers and test web applications.
+
+JUnit: A testing framework used to write and execute automated unit tests for Java applications.
+
+JUnit helps test individual pieces of Java code, while Selenium automates browser actions to verify that a web application works correctly.
+
+5.Release
+
+Jenkins: An automation server used to build, test, and release software through pipelines
+
+Build: Create the application package.
+
+Test: Check that it works correctly.
+
+Release: Prepare and identify a version approved for delivery.
+
+6.Deploy
+What does deployment mean?
+Suppose the team has finished and tested the application on a developer's laptop.
+
+Customers cannot use it just because it works on that laptop. The application must be placed in an environment where it can run, such as a test server or production infrastructure.
+
+That process is called deployment.
+
+Docker: A tool used to package applications and their dependencies into containers.
+
+Kubernetes: A platform used to deploy, scale, and manage containerized applications.
+
+7.Operate 
+
+Ansible:An automation tool used to configure servers, manage systems, and perform repetitive operational tasks.
+
+What does operating mean?
+Deployment puts the application into an environment. Operating means maintaining the systems and configuration needed to keep it working.
+
+Imagine your company has 100 servers. Each server needs particular packages, configuration files, user permissions, and service settings.
+
+Configuring every server manually would be slow and could lead to mistakes.
+
+8.Monitor:
+
+Why do we need monitoring after deployment?
+Suppose your shopping application is running correctly. After a few hours, customers start complaining that pages are loading slowly.
+
+How will the team know what's happening?
+
+They need information about application performance, server resources, errors, and other relevant signals.
+
+Monitoring helps teams detect problems and understand system behavior.
+
+
+“DevOps is a way of working that helps teams deliver software efficiently and reliably. We use Jira to plan work, Git and GitHub to manage code, Maven or Gradle to build applications, and JUnit or Selenium to test them. Jenkins and GitHub Actions automate workflows and releases. Docker and Kubernetes help package and deploy applications, Ansible automates operational tasks, and Grafana helps monitor application performance. Together, these tools support the software delivery lifecycle.”
+
+Grafana: A monitoring and visualization tool used to display metrics, logs, and system performance through dashboards.
